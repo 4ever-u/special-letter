@@ -7,55 +7,92 @@
     <style>
         body {
             font-family: 'Georgia', serif;
-            background: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTAzL3Jhd3BpeGVsX29mZmljZV8zMl9yYWluX3NjZW5lX3dpdGhfcm9zZXNfdmFsZW50aW5lcy1kYXlfZmxvd2VyX182ODA5Y2ExNi0zNDI4LTQ4N2EtYTdhMS03ZmM0NGU3MGYyNzhfMS5qcGc.jpg') no-repeat center center fixed;
+            background: url('https://images.wallpaperscraft.com/image/single/tulips_flowers_plantation_27733_1600x900.jpg') no-repeat center center fixed;
             background-size: cover;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            padding: 10px;
-            overflow: auto;
+            flex-direction: column;
+        }
+        .menu {
+            display: block;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .menu button {
+            display: block;
+            width: 200px;
+            padding: 10px 20px;
+            border: none;
+            background: rgba(255, 255, 255, 0.7);
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-bottom: 10px; /* Spacing between buttons */
+        }
+        .menu button:hover {
+            background: rgba(255, 255, 255, 0.9);
         }
         .letter-container {
-            background: rgba(255, 255, 255, 0.7);
+            background: rgba(255, 255, 255, 0.6);
             padding: 20px;
             border-radius: 10px;
-            width: 90%;
+            width: 80%;
             max-width: 600px;
             text-align: center;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
             animation: fadeIn 1.5s ease-in-out;
-            overflow-y: auto;
-            max-height: 90vh;
+            display: none;
         }
         h1 {
-            font-size: 22px;
+            font-size: 24px;
         }
         p {
-            font-size: 16px;
+            font-size: 18px;
             line-height: 1.6;
-            text-align: justify;
         }
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
         }
     </style>
+    <script>
+        function showSection(section) {
+            document.querySelectorAll('.letter-container').forEach(div => div.style.display = 'none');
+            document.getElementById(section).style.display = 'block';
+        }
+    </script>
 </head>
 <body>
-    <div class="letter-container">
+    <div class="menu">
+        <button onclick="showSection('caption')">Caption</button>
+        <button onclick="showSection('main')">Main</button>
+        <button onclick="showSection('final')">Final Words</button>
+    </div>
+    
+    <div id="caption" class="letter-container">
+        <h1>Caption</h1>
+        <p>Please make sure only YOU read this, and make sure that your family members don’t read it. Please clear everything from your phone after you read it, so you won't be in a trouble.</p>
+    </div>
+    
+    <div id="main" class="letter-container">
         <h1>Assalomu Aleykum Va Rahmatullohi Va Barakotuh</h1>
-        <p>May Allah grant us blessings in this Mubarak Ramadan month.</p>
+        <p>May Allah grant us with blessings in this Mubarak Ramadan month.</p>
         <p>How are you? Hope you’re doing well with your studies and life. I know very well that you have your own principles, priorities, and boundaries. I deeply respect and support all of them. I personally also admire how strong your beliefs are, and I hope to have such discipline myself (keep it up, I’m on your side). Back when we were friends, I didn’t fully realize how strong your values were. But now, I see that you never break your rules and always follow your path. I respect that, and I would never want to disrupt it.</p>
-        <p>There is a saying: ‘Har bir inson o’z ishini xolis niyat bilan boshlasa, Alloh uni barokatli qiladi va shu ish xayrli bo’lishiga ko’maklashadi.’ (This has happened to me many times in my life—Alhamdulillah, every successful step I’ve taken started with a pure intention.) These words have always guided me, and they will until the end of my life. The reason I’m telling you this is just to be open and honest with you.</p>
-        <p>I have never felt this way about anyone before. You are so unique—charming, intelligent, disciplined, and a person with strong iyman. It was completely unexpected. Chunki man bir insonga qalbimda bunaqa yaqinlik, iliqlik, mehr his qilaman deb umuman o’ylamagan ekanman. It happened for the first time in my life, and honestly, I didn’t know how to handle it at first.</p>
-        <p>But I want you to know something very clearly—I never had any impure intentions toward you. I never wanted to "play around" or be in a haram relationship. I know that if something starts in a haram way, it will never bring true happiness. Alhamdulillah, I understand these things very well. That’s why I always tried to keep everything as halal as possible. I had, and still have, only pure and sincere intentions about you. If my feelings were just temporary, I would have given up on you long ago and continued minding my own business.</p>
-        <p>I always wanted to explain these things to you, but you never gave me the chance. And that’s okay—I completely understand that you have your own studies, your priorities, and your boundaries, and I never wanted to distract you from them.</p>
+        <p>There is a saying: ‘Har bir inson o’z ishini xolis niyat bilan boshlasa, Alloh uni barokatli qiladi va shu ish xayrli bo’lishiga ko’maklashadi.’ (This has happened to me many times in my life. Alhamdulillah, every successful step I’ve taken started with this pure intention.) This statement has always guided me, and I truly believe in its meaning. That’s why, I can’t ignore how Allah has given me unexpected chances to cross paths with you—not just once, but 3 times in a row. ‘Everything happens for a reason’. If these were JUST coincidences, if this wasn’t meant to happen, why would these moments keep happening for two people meeting in 3 different places in 3 different ways ? It feels as if every step I take with sincerity gives me a sign, reminding me that everything unfolds naturally as it is meant to. The reason I’m telling you this is to tell that everything can happen in this life in ways that we can't even imagine like these coincidences happened with us.</p>
+        <p>But I want you to know something very clearly—I never had any haram intentions toward you. I never wanted to "play around" or be in a haram relationship. I know that if something starts in a haram way, it will never bring true happiness. Alhamdulillah, I understand these things very well. That’s why I always tried to keep everything as halal as possible. I had, and still have, only pure and sincere intentions about you. If my feelings were just temporary, I would have given up on you long ago and continued minding my own business.</p>
+        <p>I always wanted to explain these things to you, but you never gave me the chance. And that’s okay—I completely understand that you have your own studies, your priorities, and your boundaries, and I never wanted to distract you from them. </p>
         <p>You might have thought that I was proposing something last time we spoke, but that was never my intention. I wasn’t asking for anything—I just wanted to be honest and make sure you understood my situation.</p>
         <p>I am not expecting an answer or asking you to make a decision right now. I just wanted to share my thoughts openly, so there are no misunderstandings. I fully respect your priorities, your choices, and your journey. If, at some point in the future, you ever feel that this could work, you can let me know. But if not, I completely understand and will respect that too. There’s no pressure at all—I only wanted to be honest with you.</p>
-        <p>To be honest, I have never been this open with anyone in my entire life. I think you already realize that you are not just another person to me. You are the first person I fell in love with only for the sake of Allah, the first person for whom I had pure intentions. You are the first person who unexpectedly entered my life and made it more beautiful—with your incredibly amazing respect, passion, vibe, and uniqueness.</p>
+        <p>To be honest, I have never been this open with anyone in my entire life. I think you already realize that you are not just typical person to me. You are the first person I fell in love with only for the sake of Allah, the first person for whom I had pure intentions. You are the first person who unexpectedly entered my life and made it more beautiful—with your incredibly amazing respect, passion, vibe, and uniqueness.</p>
         <p>Thank you for coming into my life and becoming a part of it. :)</p>
+    </div>
+    
+    <div id="final" class="letter-container">
+        <h1>Final Words</h1>
+        <p>If it’s meant to be, it will be…</p>
     </div>
 </body>
 </html>
