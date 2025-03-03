@@ -30,7 +30,7 @@
             font-size: 16px;
             cursor: pointer;
             border-radius: 5px;
-            margin-bottom: 10px; /* Spacing between buttons */
+            margin-bottom: 10px;
         }
         .menu button:hover {
             background: rgba(255, 255, 255, 0.9);
@@ -45,6 +45,11 @@
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
             animation: fadeIn 1.5s ease-in-out;
             display: none;
+        }
+        /* Make the main section scrollable */
+        #main {
+            max-height: 300px; /* Adjust height as needed */
+            overflow-y: auto;
         }
         h1 {
             font-size: 24px;
